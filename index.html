@@ -65,7 +65,7 @@
             ['linear'],
             ['heatmap-density'],
             0, 'rgba(0,0,255,0)',
-            1, 'rgb(128,0,0)'
+            1, 'rgb(255,217,0)'
           ],
           // ヒートマップレイヤーの半径を設定
           'heatmap-radius': {
@@ -86,8 +86,8 @@
           },
         }
       }, );
-
     });
+
     // コントロール関係表示
     map.addControl(new mapboxgl.NavigationControl());
     // 現在位置表示
@@ -96,7 +96,7 @@
         enableHighAccuracy: false
       },
       fitBoundsOptions: {
-        maxZoom: 20
+        maxZoom: 15
       },
       trackUserLocation: true,
       showUserLocation: true
